@@ -3,7 +3,7 @@ using _00.INIT.Shapes;
 
 namespace _01.SRP.Operations
 {
-    public class PerimetersOperation
+    public class PerimeterOperation
     {
         public static double Sum(IEnumerable<Rectangle> rectangles)
         {

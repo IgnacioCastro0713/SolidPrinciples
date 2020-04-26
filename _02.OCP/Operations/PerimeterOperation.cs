@@ -3,7 +3,7 @@ using _02.OCP.Shapes;
 
 namespace _02.OCP.Operations
 {
-    public class PerimetersOperation
+    public class PerimeterOperation
     {
         public static double Sum(IEnumerable<object> shapes)
         {

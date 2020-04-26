@@ -17,7 +17,7 @@ namespace _01.SRP
             };
 
             var sumAreas = AreaOperation.Sum(rectangles);
-            var sumPerimeters = PerimetersOperation.Sum(rectangles);
+            var sumPerimeters = PerimeterOperation.Sum(rectangles);
 
             Console.WriteLine($"Total Area: {sumAreas}");
             Console.WriteLine($"Total Perimeters: {sumPerimeters}");

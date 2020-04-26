@@ -3,7 +3,7 @@ using _03.LSP.Geometric;
 
 namespace _03.LSP.Operations
 {
-    public class PerimetersOperation
+    public class PerimeterOperation
     {
         public static double Sum(IEnumerable<IGeometricShape> shapes)
         {

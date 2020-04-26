@@ -1,4 +1,4 @@
-﻿namespace _00.INIT.Shapes
+﻿namespace _01.SRP.Shapes
 {
     public class Rectangle
     {

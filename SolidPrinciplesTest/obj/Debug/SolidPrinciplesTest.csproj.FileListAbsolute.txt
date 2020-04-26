@@ -1,0 +1,11 @@
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\bin\Debug\SolidPrinciplesTest.dll
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\bin\Debug\SolidPrinciplesTest.pdb
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\bin\Debug\nunit.framework.dll
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\bin\Debug\nunit.framework.xml
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\obj\Debug\SolidPrinciplesTest.csprojAssemblyReference.cache
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\obj\Debug\SolidPrinciplesTest.csproj.CoreCompileInputs.cache
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\obj\Debug\SolidPrinciplesTest.csproj.CopyComplete
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\obj\Debug\SolidPrinciplesTest.dll
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\obj\Debug\SolidPrinciplesTest.pdb
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\bin\Debug\_03.LSP.exe
+C:\Users\ignac\RiderProjects\SolidPrinciples\SolidPrinciplesTest\bin\Debug\_03.LSP.pdb

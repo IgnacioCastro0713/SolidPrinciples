@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_01.SRP", "_01.SRP\_01.SRP.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02.OCP", "_02.OCP\_02.OCP.csproj", "{10A9E0AB-B458-4ED5-B336-DABB514433B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciplesTest", "SolidPrinciplesTest\SolidPrinciplesTest.csproj", "{EC9C3236-6736-4EAF-9D70-DB49B6360323}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{10A9E0AB-B458-4ED5-B336-DABB514433B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10A9E0AB-B458-4ED5-B336-DABB514433B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10A9E0AB-B458-4ED5-B336-DABB514433B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9C3236-6736-4EAF-9D70-DB49B6360323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9C3236-6736-4EAF-9D70-DB49B6360323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9C3236-6736-4EAF-9D70-DB49B6360323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9C3236-6736-4EAF-9D70-DB49B6360323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

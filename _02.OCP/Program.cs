@@ -19,7 +19,7 @@ namespace _02.OCP
             };
 
             var sumAreas = AreaOperation.Sum(figures);
-            var sumPerimeters = PerimetersOperation.Sum(figures);
+            var sumPerimeters = PerimeterOperation.Sum(figures);
 
             Console.WriteLine($"Total Area: {sumAreas}");
             Console.WriteLine($"Total Perimeters: {sumPerimeters}");

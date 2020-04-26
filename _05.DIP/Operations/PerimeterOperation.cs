@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using _03.LSP.Geometric;
+using _05.DIP.Geometric.Segregations;
 
-namespace _03.LSP.Operations
+namespace _05.DIP.Operations
 {
-    public class PerimetersOperation
+    public class PerimeterOperation
     {
-        public static double Sum(IEnumerable<IGeometricShape> shapes)
+        public double Sum(IEnumerable<IHasPerimeter> shapes)
         {
             double perimeter = 0;
             foreach (var shape in shapes)

@@ -19,7 +19,7 @@ public class Rectangle
 ```
 
 While the main program is in charge of creating the `rectangles` and calling the respective methods to obtain the sums:
-```
+```csharp
 var rectangles = new[]
 {
     new Rectangle {Width = 10, Height = 5},
@@ -37,7 +37,7 @@ Everything seems perfect, your program works like a charm, but it is violating t
 The violation occurs when declaring the `SumAreas` and` SumPerimeters` methods within the same class as `Rectangle` and is that although they are related to the rectangle as such, the summation is part of our application logic , not the logic that a rectangle could have in real life.
 ## Complying with the SRP
 To comply with the principle, we remove the summation functionality of the `Rectangle` class and introduce a couple of classes in charge of performing the operations on the sets of rectangles, their code is more or less this:
-```
+```csharp
 public class AreaOperation
 {
     public static double Sum(IEnumerable<Rectangle> rectangles)
@@ -59,7 +59,7 @@ Now, suppose that after a certain time, people liked your program so much that t
 
 So you create a new class to represent the triangles, and you modify the methods to add areas so that they accept both rectangles and triangles and inside them you check what type each object is and perform the appropriate calculation:
 
-```
+```csharp
 public class AreaOperation
 {
     public static double Sum(IEnumerable<object> shapes)
@@ -111,7 +111,7 @@ You probably already have an idea of ​​where in the code this principle is b
 ## Complying with the OCP 
 The solution to this violation will be given through the use of abstractions (in this case the `IGeometricShape` interface) through which we will indicate that our figures share properties and methods (in this case the area and the perimeter):
 
-```
+```csharp
 public interface IGeometricShape
 {
     double Area();
@@ -143,7 +143,7 @@ In this way, when we add new figures in the future, we will only have to impleme
 
 Now people start asking your program to calculate the information of square shapes, so you create a class called `Square` which inherits from the` Rectangle` class you created a few steps ago, after all, a square is no more than a rectangle with a small constraint. And to meet that constraint, you changed the behavior of its `Height` and` Width` properties:
 
-```
+```csharp
 public class Square : Rectangle
 {
     private double _height;
@@ -176,7 +176,7 @@ Now, there are even those who are developing applications with your code. Everyt
 ## LSP violation 
 Suppose as part of your program growth, you decided to start writing unit tests, and wrote one like the following:
 
-```
+```csharp
 Rectangle rectangle = new Square();
 rectangle.Width = 3;
 rectangle.Height = 6;
@@ -192,7 +192,7 @@ There are some weird things ... however the code compiles and runs, however the 
 ## Complying with the LSP
 The solution is quite simple: we must make `Square` not derived from` Rectangle`, and instead implement `IGeometrcShape`:
 
-```
+```csharp
 public class Square : IGeometricShape
 ```  
 
@@ -203,7 +203,7 @@ Now, everything seems perfect, your program works wonders, but it is violating t
 ## ISP violation  
 Without having the slightest intention, we introduced this violation when we comply with the OCP, and that is that the ISP tells us that we must separate the interfaces so that the software components that work with them have only the information they need from them and no more. Let's take a look at the `IGeometricShape` interface:
 
-```
+```csharp
 public interface IGeometricShape
 {
     double Area();
@@ -216,7 +216,7 @@ And it is used both in the calculation of sum of areas and in the calculation of
 ## Complying with the ISP  
 Compliance with this principle leads us to separate the `IGeometricShape` interface into two:` IHasPerimeter` and `IHasArea`, in order to pass only the necessary information to each of the methods within our program:
 
-```
+```csharp
 public interface IHasArea
 {
     double Area();
@@ -234,7 +234,7 @@ public interface IGeometricShape : IHasArea, IHasPerimeter
 
 Your code starts to grow, fantastic, so you think it's better to keep organizing it and move all the logic of the calculation of sums to another class:
 
-```
+```csharp
 public class GreatCalculator
 {
     public double TotalAreas { get; private set; }
@@ -264,7 +264,7 @@ public class GreatCalculator
 
 And you made the necessary modifications to the main method of the program:
 
-```
+```csharp
 private static void Main(string[] args)
 {
     var calculator = new GreatCalculator();
@@ -284,9 +284,10 @@ This violation occurs in the new class you just added, right in the `Calculate` 
 ## Complying with the DIP  
 To comply with this principle we have to remove the dependency that the `GreatCalculator` class has with the` figures` arrangement, making the object that calls it the one in charge of providing it with the figures with which it has to operate:
 
-```
+```csharp
 public void Calculate(IEnumerable<IGeometricShape> figures)
 {
+}
 ```
 
 This reduces your dependency, and you are ready to trade any number of `IGeometricShape`s you want.

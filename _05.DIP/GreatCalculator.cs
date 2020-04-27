@@ -11,13 +11,10 @@ namespace _05.DIP
 
         public void Calculate(IEnumerable<IGeometricShape> figures)
         {
-            var areaOperations = new AreaOperation();
-            var perimeterOperations = new PerimeterOperation();
-
             var geometricShapes = figures as IGeometricShape[];
 
-            TotalAreas = areaOperations.Sum(geometricShapes);
-            TotalPerimeters = perimeterOperations.Sum(geometricShapes);
+            TotalAreas = AreaOperation.Sum(geometricShapes);
+            TotalPerimeters = PerimeterOperation.Sum(geometricShapes);
         }
     }
 }

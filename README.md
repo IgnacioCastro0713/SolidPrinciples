@@ -4,11 +4,11 @@ In object-oriented computer programming, SOLID is a mnemonic acronym for five de
 
 | Initial | Acronyms | Concept                                                                                                                                                                                                                    |
 |---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| S       | SRP      | <b>Single-responsibility principle</b><br>A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class. |
-| O       | OCP      | <b>Open–closed principle</b><br>"Software entities ... should be open for extension, but closed for modification."                                                                                                         |
-| L       | LSP      | <b>Liskov substitution principle</b><br>"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."                                                    |
-| I       | ISP      | <b>Interface segregation principle</b><br>"Many client-specific interfaces are better than one general-purpose interface."                                                                                                 |
-| D       | DIP      | <b>Dependency inversion principle</b><br>One should "depend upon abstractions, [not] concretions."                                                                                                                         |
+| S       | SRP      | <b>Single-responsibility principle</b><br>A class should have one and only one reason to change, meaning that a class should have only one job. |
+| O       | OCP      | <b>Open–closed principle</b><br>Objects or entities should be open for extension, but closed for modification.                                                                                                         |
+| L       | LSP      | <b>Liskov substitution principle</b><br>Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.                                                    |
+| I       | ISP      | <b>Interface segregation principle</b><br>A client should never be forced to implement an interface that it doesn't use or clients shouldn't be forced to depend on methods they do not use.                                                                                                 |
+| D       | DIP      | <b>Dependency inversion principle</b><br>Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions.                                                                                                                         |
 
 Well, once we have seen the definition and its concepts, let's develop a practical example to better understand
 

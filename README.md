@@ -1,14 +1,14 @@
-# SOLID
+# SOLID Priciples
 
 In object-oriented computer programming, SOLID is a mnemonic acronym for five design principles intended to make software designs more understandable, flexible and maintainable.
 
-| Initial | Acronyms | Concept                                                                                                                                                                                                       |
-|---------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| S       | SRP      | Single-responsibility principle  A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class. |
-| O       | OCP      | Open–closed principle "Software entities ... should be open for extension, but closed for modification."                                                                                                      |
-| L       | LSP      | Liskov substitution principle "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."                                                 |
-| I       | ISP      | Interface segregation principle "Many client-specific interfaces are better than one general-purpose interface."                                                                                              |
-| D       | DIP      | Dependency inversion principle One should "depend upon abstractions, [not] concretions."                                                                                                                      |
+| Initial | Acronyms | Concept                                                                                                                                                                                                                    |
+|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| S       | SRP      | <b>Single-responsibility principle</b><br><br>A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class. |
+| O       | OCP      | <b>Open–closed principle</b><br>"Software entities ... should be open for extension, but closed for modification."                                                                                                         |
+| L       | LSP      | <b>Liskov substitution principle</b><br>"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."                                                    |
+| I       | ISP      | <b>Interface segregation principle</b><br>"Many client-specific interfaces are better than one general-purpose interface."                                                                                                 |
+| D       | DIP      | <b>Dependency inversion principle</b><br>One should "depend upon abstractions, [not] concretions."                                                                                                                         |
 
 Think of a fairly ... fairly simple application that calculates the sum of the areas and perimeters of a set of rectangles. For this, you have a class called `Rectangle` which looks something like this:
 ```csharp

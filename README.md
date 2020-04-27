@@ -1,5 +1,5 @@
 Think of a fairly ... fairly simple application that calculates the sum of the areas and perimeters of a set of rectangles. For this, you have a class called `Rectangle` which looks something like this:
-```
+```csharp
 public class Rectangle
 {
     public double Sides { get; } = 4;

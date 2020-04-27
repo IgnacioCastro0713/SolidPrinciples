@@ -121,7 +121,7 @@ public interface IGeometricShape
 
 Y también tenemos que modificar las clases de operaciones para que acepten ahora objetos que cumplan con ese comportamiento, para así poder llamar a esos métodos, sin tener que preocuparse de qué tipo son "realmente" los objetos con los que está trabajando:  
 
-```
+```csharp
 public double Sum(IEnumerable<IGeometricShape> shapes)
 {
     double area = 0;

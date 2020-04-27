@@ -14,7 +14,7 @@ Well, once we have seen the definition and its concepts, let's develop a practic
 
 ## Practice
 
-Think of a fairly ... fairly simple application that calculates the sum of the areas and perimeters of a set of rectangles. For this, you have a class called `Rectangle` which looks something like this:
+Think of a fairly ... fairly simple application that calculates the sum of the areas and perimeters of a set of rectangles. For this, you have a class called `Rectangle` which looks something like this: [see full code](https://github.com/IgnacioCastro0713/SolidPrinciples/blob/master/_00.INIT/Shapes/Rectangle.cs "ctrl + click")
 ```csharp
 public class Rectangle
 {

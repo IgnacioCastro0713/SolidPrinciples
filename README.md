@@ -10,6 +10,10 @@ In object-oriented computer programming, SOLID is a mnemonic acronym for five de
 | I       | ISP      | <b>Interface segregation principle</b><br>"Many client-specific interfaces are better than one general-purpose interface."                                                                                                 |
 | D       | DIP      | <b>Dependency inversion principle</b><br>One should "depend upon abstractions, [not] concretions."                                                                                                                         |
 
+Well, once we have seen the definition and its concepts, let's develop a practical example to better understand
+
+## Practice
+
 Think of a fairly ... fairly simple application that calculates the sum of the areas and perimeters of a set of rectangles. For this, you have a class called `Rectangle` which looks something like this:
 ```csharp
 public class Rectangle

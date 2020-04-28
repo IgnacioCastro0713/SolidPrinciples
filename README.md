@@ -136,7 +136,7 @@ public interface IGeometricShape
 }
 ```
 
-And we also have to modify the classes of operations so that they now accept objects that comply with that behavior, so that we can call those methods, without having to worry about what type "really" the objects are working with:  [see full code](https://github.com/IgnacioCastro0713/SolidPrinciples/tree/master/_02.OCP/Operations "ctrl + click")
+And we also have to modify the operations classes with the intention that it can accept object that comply with that behavior, in order to call those methods, without  having to worry about what type "really" the objects are working with:  [see full code](https://github.com/IgnacioCastro0713/SolidPrinciples/tree/master/_02.OCP/Operations "ctrl + click")
 
 ```csharp
 public double Sum(IEnumerable<IGeometricShape> shapes)
